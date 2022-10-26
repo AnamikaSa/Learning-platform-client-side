@@ -16,7 +16,7 @@ const Courses = () => {
     return (
         <div>
                 {
-                    c.map(category=> <div key={category.id}>
+                    c.map(category=> <div key={category._id}>
                         <Card className="mt-5">
                             <Card.Header className='d-grid justify-content-center '>
                                 

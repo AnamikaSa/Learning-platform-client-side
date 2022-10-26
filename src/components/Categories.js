@@ -10,6 +10,7 @@ import img5 from '../images/C5.jpg';
 import img6 from '../images/C6.jpg';
 import img7 from '../images/C7.png';
 import { Link } from 'react-router-dom';
+import ForLoginReg from './ForLoginReg';
 const Categories = () => {
     const [categories, setC] = useState([]);
 
@@ -23,6 +24,9 @@ const Categories = () => {
             <Row>
                 <Col lg='3'>
                 <LeftSide></LeftSide>
+                <br></br>
+                <br></br>
+                <ForLoginReg></ForLoginReg>
                 </Col>
 
                 <Col lg='9' className='mt-5'>
