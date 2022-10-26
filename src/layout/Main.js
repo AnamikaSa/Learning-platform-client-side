@@ -1,11 +1,11 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
-import HeaderWithBackground from '../components/HeaderWithBackground';
+import Header from '../components/Header';
 
 const Main = () => {
     return (
         <div>
-            <HeaderWithBackground></HeaderWithBackground>
+            <Header></Header>
             <Outlet></Outlet>
         </div>
     );
