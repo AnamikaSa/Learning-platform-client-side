@@ -1,3 +1,7 @@
+#Learning Platform
+it's a web based app where students can easily find out about courses.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
