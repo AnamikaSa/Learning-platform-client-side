@@ -20,10 +20,10 @@ const Courses = () => {
         <div>
                 {
                     c.map(category=> <div key={category._id}>
-                        <Card ref={ref} className="mt-5">
-                            <Card.Header className='d-grid justify-content-center '>
+                        <Card ref={ref} className=" mt-5 w-50 mb-5 shadow-lg align-items-center" style={{margin:'auto'}}>
+                            <Card.Header >
                                 
-                                <div>
+                                <div className=''>
                                     <p className='fw-bold'>{category.title}</p>
                                     <Image className='me-2 w-100' src={category?.image_url} >
                                     </Image>
@@ -40,7 +40,7 @@ const Courses = () => {
                             </Card.Body>
 
                                 <div>
-                                    <ReactToPrint trigger={()=><Button className='mx-5 mb-2'>Print to Pdf</Button>} content={()=>ref.current} />
+                                    <ReactToPrint trigger={()=><Button className='me-3 mb-2'>Print to Pdf</Button>} content={()=>ref.current} />
 
                                     <Link className='mb-2 btn btn-success' to='/premium'>Get premiun access</Link>
                                 </div>
