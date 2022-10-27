@@ -12,9 +12,9 @@ const LeftSide = () => {
  
     return (
         <div>
-            <h4 className='mt-3'>Choose Yours: 
+            <h4 className='mt-5'>Choose Yours: 
             </h4>
-            <div className='mt-5 '>
+            <div className='mt-2 bg-dark pt-5 pb-5 ps-2 w-100'>
                 {
                     categories.map(category => <p key={category.id}>
                         <Link to={`/category/${category.id}`} className='text-decoration-none text-info'>{category.name}</Link>
