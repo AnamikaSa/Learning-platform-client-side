@@ -3,6 +3,7 @@ import Blog from "../components/Blog";
 import Categories from "../components/Categories";
 import Courses from "../components/Courses";
 import FAQ from "../components/FAQ";
+import GetPremium from "../components/GetPremium";
 import Home from "../components/Home";
 import Login from "../components/Login";
 import Profile from "../components/Profile";
@@ -41,6 +42,10 @@ export const routes = createBrowserRouter([
                 {
                     path:'/register',
                     element:<Register></Register>
+                },
+                {
+                    path:'/premium',
+                    element:<GetPremium></GetPremium>
                 },
                 {
                     path:'/profile',

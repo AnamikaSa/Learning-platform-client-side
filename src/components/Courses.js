@@ -1,7 +1,7 @@
 import React, {} from 'react';
 import { useRef } from 'react';
 import { Button, Card, Image } from 'react-bootstrap';
-import { useLoaderData } from 'react-router-dom';
+import { Link, useLoaderData } from 'react-router-dom';
 import ReactToPrint from 'react-to-print';
 
 
@@ -42,6 +42,7 @@ const Courses = () => {
                                 <div>
                                     <ReactToPrint trigger={()=><Button className='mx-5 mb-2'>Print to Pdf</Button>} content={()=>ref.current} />
                                 </div>
+                                <Link to='/premium'>Get premiun access</Link>
                         </Card>
         
                     </div>)
