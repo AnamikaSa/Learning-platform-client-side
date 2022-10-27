@@ -1,5 +1,6 @@
 #Learning Platform
-it's a web based app where students can easily find out about courses.
+
+It's a web based app where students can easily find out about courses.
 
 
 # Getting Started with Create React App
