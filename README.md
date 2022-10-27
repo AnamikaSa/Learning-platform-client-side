@@ -1,3 +1,20 @@
+# Learning Platform
+
+It's a web based app where students can easily find out about courses. Mainly focused on English.
+
+## What I used here
+
+### >here i created two API data file
+### >Used react hot toast foe notifications
+### >Used npm react-to-print to download pdf file about details
+### >Used react-bootstarp for design
+### >Used forms for login and register
+### >Used cards to display the courses
+### >for deploy used firebase site
+### >used vercel for api links
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
