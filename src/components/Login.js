@@ -4,10 +4,11 @@ import Form from 'react-bootstrap/Form';
 import toast from 'react-hot-toast';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../contexts/AuthProvider';
+import ForLoginReg from './ForLoginReg';
 
 
 const Login = () => {
-    const [error, setError] = useState('');
+    const [e, setError] = useState('');
     const { signIn, setLoading } = useContext(AuthContext);
     const navigate = useNavigate();
     const location = useLocation();
@@ -30,12 +31,12 @@ const Login = () => {
                     navigate(from, {replace: true});
                 }
                 else{
-                    toast.error('Your email is not verified. Please verify your email address.')
+                    toast('Verify your email address.')
                 }
             })
-            .catch(error => {
-                console.error(error)
-                setError(error.message);
+            .catch(e => {
+                console.error(e)
+                setError(e.message);
             })
             .finally(() => {
                 setLoading(false);
@@ -43,16 +44,16 @@ const Login = () => {
     }
 
     return (
-        <Form onSubmit={submit} className='m-5 p-5'>
-            <Form.Group className="mb-3 pe-5 pl-5" controlId="formBasicEmail">
+        <Form onSubmit={submit} className='m-5 p-5 border shadow-lg rounded align-items-center'>
+            <Form.Group className="mb-3 pe-5 pl-5 " controlId="formBasicEmail">
                 <Form.Label>Email address</Form.Label>
-                <Form.Control name="email" type="email" placeholder="Enter email" required />
+                <Form.Control className='w-50'  name="email" type="email" placeholder="Enter email" required />
 
             </Form.Group>
 
             <Form.Group className="mb-3 pe-5 pl-5" controlId="formBasicPassword">
                 <Form.Label>Password</Form.Label>
-                <Form.Control name="password" type="password" placeholder="Password" required />
+                <Form.Control className='w-50' name="password" type="password" placeholder="Password" required />
             </Form.Group>
 
             <Button variant="primary" type="submit">
@@ -60,8 +61,9 @@ const Login = () => {
             </Button>
             <p>Don't have account? Then Register first.</p>
             <Form.Text className="text-danger">
-                {error}
+                {e}
             </Form.Text>
+            <ForLoginReg></ForLoginReg>
         </Form>
     );
 };

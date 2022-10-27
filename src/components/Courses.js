@@ -1,10 +1,13 @@
 import React, {} from 'react';
-import { Card, Image } from 'react-bootstrap';
+import { useRef } from 'react';
+import { Button, Card, Image } from 'react-bootstrap';
 import { useLoaderData } from 'react-router-dom';
+import ReactToPrint from 'react-to-print';
+
 
 const Courses = () => {
     const c = useLoaderData();
-    
+    const ref= useRef()
     console.log(c);
     // const [categories, setC] = useState([]);
     // useEffect ( () =>{
@@ -17,7 +20,7 @@ const Courses = () => {
         <div>
                 {
                     c.map(category=> <div key={category._id}>
-                        <Card className="mt-5">
+                        <Card ref={ref} className="mt-5">
                             <Card.Header className='d-grid justify-content-center '>
                                 
                                 <div>
@@ -35,6 +38,10 @@ const Courses = () => {
                                     {category?.details}
                                 </Card.Text>
                             </Card.Body>
+
+                                <div>
+                                    <ReactToPrint trigger={()=><Button className='mx-5 mb-2'>Print to Pdf</Button>} content={()=>ref.current} />
+                                </div>
                         </Card>
         
                     </div>)
