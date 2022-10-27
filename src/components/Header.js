@@ -20,7 +20,7 @@ const Header= () => {
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container>
        <Image className="pe-3" src={logo} alt=''></Image> 
-        <Navbar.Brand href="/home">EDU Leanring</Navbar.Brand>
+        <Navbar.Brand href="/">EDU Leanring</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">

@@ -44,9 +44,9 @@ const Login = () => {
     }
 
     return (
-        <Form onSubmit={submit} className='m-5 p-5 border shadow-lg rounded align-items-center'>
+        <Form onSubmit={submit} className='mt-5 pt-5 shadow-lg rounded w-25 ' style={{margin:'auto'}}>
             <Form.Group className="mb-3 pe-5 pl-5 " controlId="formBasicEmail">
-                <Form.Label>Email address</Form.Label>
+                <Form.Label >Email address</Form.Label>
                 <Form.Control className='w-50'  name="email" type="email" placeholder="Enter email" required />
 
             </Form.Group>

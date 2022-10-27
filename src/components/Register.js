@@ -57,7 +57,7 @@ const Register = () => {
     }
 
     return (
-        <Form onSubmit={submit} className='m-5 p-5 border shadow-lg rounded align-items-center'>
+        <Form onSubmit={submit} className='mt-5 p-5 shadow-lg rounded w-50 ' style={{margin:'auto'}}>
             <Form.Group className="mb-3 pe-5 pl-5" controlId="formBasicEmail">
                 <Form.Label>Your Name</Form.Label>
                 <Form.Control  className='w-50' name="name" type="text" placeholder="Your Name" />
