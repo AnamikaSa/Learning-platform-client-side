@@ -15,7 +15,7 @@ const Categories = () => {
     const [categories, setC] = useState([]);
 
     useEffect ( () =>{
-        fetch('http://localhost:5000/categories')
+        fetch(' https://learning-platform-server-anamikasa.vercel.app/categories')
         .then( res => res.json())
         .then(data => setC(data));
     }, [])

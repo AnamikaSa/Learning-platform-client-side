@@ -11,7 +11,7 @@ const Courses = () => {
     console.log(c);
     // const [categories, setC] = useState([]);
     // useEffect ( () =>{
-    //     fetch('http://localhost:5000/category/01')
+    //     fetch(' https://learning-platform-server-anamikasa.vercel.app/category/01')
     //     .then( res => res.json())
     //     .then(data => setC(console.log(data)));
     // }, [])

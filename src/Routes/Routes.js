@@ -20,7 +20,7 @@ export const routes = createBrowserRouter([
                 {
                     path:'/',
                     element:<Home></Home>,
-                    // loader:()=> fetch('http://localhost:5000/courses')
+                    // loader:()=> fetch(' https://learning-platform-server-anamikasa.vercel.app/courses')
                 },
                 {
                     path: '/categories',
@@ -29,7 +29,7 @@ export const routes = createBrowserRouter([
                 {
                     path:'/category/:id',
                     element: <Private><Courses></Courses></Private>,
-                    loader: ({params}) =>fetch(`http://localhost:5000/category/${params.id}`)
+                    loader: ({params}) =>fetch(` https://learning-platform-server-anamikasa.vercel.app/category/${params.id}`)
                 },
                 {
                     path:'/blog',
