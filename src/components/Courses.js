@@ -41,8 +41,9 @@ const Courses = () => {
 
                                 <div>
                                     <ReactToPrint trigger={()=><Button className='mx-5 mb-2'>Print to Pdf</Button>} content={()=>ref.current} />
+
+                                    <Link className='mb-2 btn btn-success' to='/premium'>Get premiun access</Link>
                                 </div>
-                                <Link to='/premium'>Get premiun access</Link>
                         </Card>
         
                     </div>)
