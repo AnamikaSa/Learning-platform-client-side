@@ -1,4 +1,4 @@
-#Learning Platform
+# Learning Platform
 
 It's a web based app where students can easily find out about courses.
 
