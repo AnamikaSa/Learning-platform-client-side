@@ -14,6 +14,8 @@ It's a web based app where students can easily find out about courses. Mainly fo
 ### >used vercel for api links
 ### >You have to log in first to see course details and see premium details 
 
+## `Back-End is on Learning-platform-server-side` 
+
 
 
 # Getting Started with Create React App
