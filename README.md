@@ -1,5 +1,5 @@
 # Learning Platform
-## Live link : learning-platform-anamika.firebaseapp.com
+### Live link : learning-platform-anamika.firebaseapp.com
 It's a web based app where students can easily find out about courses. Mainly focused on English.
 
 ## What I used here
